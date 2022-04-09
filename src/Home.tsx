@@ -558,8 +558,8 @@ const Home = (props: HomeProps) => {
                     <Menu>
                         <li><a href="https://www.bitmatoes.com" target="_blank" rel="noopener noreferrer">bitmatoes.com</a>
                         </li>
-                        <li><a href="https://www.matogen.app" target="_blank"
-                               rel="noopener noreferrer">matogen.app</a></li>
+                        {/* <li><a href="https://www.matogen.app" target="_blank"
+                               rel="noopener noreferrer">matogen.app</a></li> */}
                     </Menu>
                     <Wallet>
                         {wallet ?
