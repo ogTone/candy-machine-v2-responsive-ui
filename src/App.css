@@ -1,7 +1,10 @@
 /* Customize your main colors in :root variables */
 :root {
-  --main-background-color: #343A50;
-  --card-background-color: #51576D;
+  --mato-red: #f04949;
+  --mato-dark-green: #2d5226;
+  --mato-light-green: #7bb86d;
+  --main-background-color: var(--mato-dark-green);
+  --card-background-color: var(--mato-light-green);
   --card-background-lighter-color: #7A7F92;
   --main-text-color:#F7F6F4;
   --title-text-color:#3CBA8B;
