@@ -414,7 +414,7 @@ const Home = (props: HomeProps) => {
     const renderGoLiveDateCounter = ({days, hours, minutes, seconds}: any) => {
         return (
             <div>
-                <p className="notice">Waiting for <a href="https://twitter.com/KyoudaiAcademy">KyoudaiAcademy</a> to present at Solana Miami demo day until reopening mint. The bitmatoes are added to their game!</p>
+                <p className="notice">We are waiting for <a href="https://twitter.com/KyoudaiAcademy">KyoudaiAcademy</a> to present at Solana Miami demo day until reopening mint. The bitmatoes are added to their game!</p>
                 <Card elevation={1}><h1>{days}</h1>Days</Card><Card elevation={1}><h1>{hours}</h1>
                 Hours</Card><Card elevation={1}><h1>{minutes}</h1>Mins</Card><Card elevation={1}>
                 <h1>{seconds}</h1>Secs</Card>
