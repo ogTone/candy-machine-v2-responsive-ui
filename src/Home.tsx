@@ -515,7 +515,7 @@ const Home = (props: HomeProps) => {
                 }
             } else {
                 if (error.code === 311) {
-                    message = `SOLD OUT!`;
+                    message = `SOLD OUT! if you didn't get one`;
                 } else if (error.code === 312) {
                     message = `Minting period hasn't started yet.`;
                 }
@@ -597,6 +597,9 @@ const Home = (props: HomeProps) => {
                                                                          value={100 - (itemsRemaining * 100 / itemsAvailable)}/>}
                             <br/>
                             <MintButtonContainer>
+                                <p>If you didn't get to mint a bitmato, please reach out on twitter <a href="https://twitter.com/bitmatoes">https://twitter.com/bitmatoes</a> or discord at <a href="https://discord.gg/fdWQSMyQwv">Discord</a>
+
+                                </p>
                                 {!isActive && !isEnded && candyMachine?.state.goLiveDate && (!isWLOnly || whitelistTokenBalance > 0) ? (
                                     <Countdown
                                         date={toDate(candyMachine?.state.goLiveDate)}
@@ -649,7 +652,7 @@ const Home = (props: HomeProps) => {
                                             />
                                         ) :
                                         <h1>Mint is private.</h1>
-                                        )}
+                                        )}  
                             </MintButtonContainer>
                             <br/>
                             {wallet && isActive && solanaExplorerLink &&
